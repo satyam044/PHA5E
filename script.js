@@ -77,16 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 duration: 0.3,
                 ease: "power2.out"
             });
-
-            gsap.to(thumbnails, {
-                opacity: 1,
-                filter: "none",
-                duration: 0.8,
-                ease: "power2.out"
+            thumbnails.forEach(otherThumbnail => {
+                gsap.to(otherThumbnail.querySelector("img"), {
+                    opacity: 1,
+                    filter: "none",
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
             });
 
             text.classList.remove("outline");
         });
+
 
         image.addEventListener("mousemove", function (e) {
             let bounds = this.getBoundingClientRect();

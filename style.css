@@ -59,7 +59,7 @@ nav ul li a span:after {
     font-size: 2rem;
 }
 
-.ham{
+.ham {
     position: absolute;
     right: 2rem;
     font-size: 2rem;
@@ -68,7 +68,7 @@ nav ul li a span:after {
     display: none !important;
 }
 
-.hamMenu{
+.hamMenu {
     padding: 4rem;
     height: 100%;
     width: 100%;
@@ -78,16 +78,17 @@ nav ul li a span:after {
     display: none;
 }
 
-.hamMenu.active{
+.hamMenu.active {
     display: block;
 }
 
-.hamMenu li{
+.hamMenu li {
     list-style: none;
     text-transform: uppercase;
     font-weight: 900;
 }
-.hamMenu a{
+
+.hamMenu a {
     font-size: 2.5rem;
     text-decoration: none;
     color: #ffffff;
@@ -168,13 +169,13 @@ nav ul li a span:after {
 .thumbnail-content .tc-txt h2 {
     width: 50%;
     font-size: 3rem;
-    font-weight: bolder;
     line-height: 80%;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .thumbnail-content .tc-txt p {
+    width: 60%;
     font-size: 1rem;
 }
 
@@ -215,7 +216,7 @@ nav ul li a span:after {
     }
 
     .txt {
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     .thumbnails {
@@ -227,7 +228,26 @@ nav ul li a span:after {
     .thumbnails {
         height: 40%;
     }
-    .hamMenu{
+
+    .hamMenu {
         padding: 2rem;
+    }
+
+    .hamMenu a {
+        line-height: 200%;
+        font-size: 5vw;
+    }
+
+    .tc-txt {
+        left: 1rem !important;
+        top: 2rem !important;
+    }
+
+    .tc-txt h2 {
+        font-size: 4vw !important;
+    }
+
+    .tc-txt p {
+        font-size: 2vw !important;
     }
 }
